@@ -1,0 +1,151 @@
+/* 2 */
+
+h2.tm-box-bg-title:hover {
+    background: linear-gradient(to bottom, #87CEFA, #FFFFFF);
+    color: #FFFFFF;
+}
+
+/* 3 */
+
+p:first-letter {
+    color: #87CEFA;
+    font-size: 30px;
+}
+
+/* 4 */
+
+.tm-content-box,
+.tm-sidebar,
+.blocks {
+    box-shadow: 0 0 4px 4px #DCDCDC;
+}
+
+.tm-banner {
+    padding: 0;
+    border: 20px solid #F5F5F5;
+}
+
+/* 5 */
+
+section {
+    position: relative;
+
+}
+
+section::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-style: solid;
+    border-color: #87CEFA transparent;
+    border-width: 30px 230px 0 0;
+}
+
+/* 6 */
+
+.carousel-inner h2 {
+    color: gainsboro;
+    letter-spacing: 5px;
+}
+
+/* 7 */
+
+h2 + p {
+    font-style: italic;
+}
+
+/* 8 */
+
+p {
+    line-height: 1.5em;
+    text-indent: 17px;
+}
+
+/* 9 */
+
+.heading li a:visited {
+    color: black;
+    text-decoration: underline;
+}
+.heading li:first-child::after,
+.heading li:nth-child(3)::after {
+    content: "New";
+    color: red;
+    font-size: 12px;
+    vertical-align: super;
+}
+.heading li a:hover {
+    color: #87CEFA;
+    text-decoration: underline double;
+}
+
+/* 10 */
+
+.box-work {
+    padding: 10px;
+}
+.box-work:nth-child(even) {
+    background-color: #F5F5F5;
+}
+.box-work p:first-letter {
+    color: black;
+}
+.box-work p {
+    text-indent: 0px;
+}
+
+/* 11 */
+
+.submit-btn {
+    background: #FFFFFF;
+    color: #87CEFA;
+    border-color: #87CEFA;
+    border-radius: 0px;
+    float: right;
+    height: 50px;
+    width: 130px;
+}
+.submit-btn:hover {
+    background: #87CEFA;
+    border: 0px;
+    color: #F5F5F5;
+}
+.mandatory-field:after {
+    color: red;
+    content: " *";
+}
+
+/* 12 */
+
+.tm-main-nav li:hover {
+    background: #F5F5F5;
+}
+.tm-content-box.flex-2-col:first-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* 1 */
+
+@media print {
+    .tm-sidebar,
+    #about,
+    .heading,
+    .blocks,
+    #ideas,
+    .img-contact-us,
+    #contact,
+    section::after {
+        display: none;
+    }
+    .tm-banner {
+        border: 0px;
+    }
+    .flex-item img {
+        margin-top: 100px;
+        margin-right: 10px;
+        width: 250px;
+    }
+}
